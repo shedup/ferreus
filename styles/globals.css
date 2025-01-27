@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: fa;
+  src: url(../fonts/relevance/Relevance-trial-Regular-BF65d41be299a63.ttf);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: fa;
+  /* background-color: rgb(17, 20, 70); */
+  /* background-color: #fffde2;
+  background: linear-gradient(to bottom, #fffde2, #d4d7ff);
+  background-repeat: no-repeat; */
+
+  color: #005f46;
+}
+a:hover {
+  color: gray;
 }
